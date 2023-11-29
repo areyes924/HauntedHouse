@@ -1,0 +1,127 @@
+/* Resetting some styles */
+body, html {
+	margin: 0;
+	padding: 0;
+	overflow: hidden; /* Prevent vertical scrolling */
+}
+
+/* Body styles */
+body {
+	font-family: 'Cambria', 'Coquin', Georgia, Times, 'Times New Roman', serif;
+	/* background-color: black; */
+	background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/02/shutterstock-black-design-how-to-black-cover.jpg?w=960&h=600&crop=1);
+	color: white;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+/* Grid container styles */
+#grid-container {
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: 40% 40% 10% 10%; /* Equal width columns */
+	grid-template-rows: 10% 30% 30% 30%;
+	height: 100vh; /* Set height to 100% of viewport height */
+	overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Cell styles */
+.cell {
+	padding: 10px;
+}
+
+/* Title styles */
+#title {
+	background-color: black;
+	grid-column: span 4;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+/* Image styles */
+#image {
+	grid-row: span 2;
+	overflow: hidden;
+}
+
+#image img {
+	width: 100%; /* Adjust the width as needed */
+	height: 100%; /* Adjust the height as needed */
+	object-fit: cover; /* or 'contain', or 'fill' based on your preference */
+}
+
+/* Story styles */
+#story {
+	/* background-color:#565452; */
+	grid-row: span 2;
+	margin: 10px;
+	display: flex;
+	align-items: center; /* Center vertically */
+	justify-content: center; /* Center horizontally */
+
+	font-size:20px;
+}
+
+/* Choice styles */
+#choice1, #choice2 {
+	grid-column: span 2;
+	color: white;
+}
+
+/* Button styles */
+button {
+	width: 100%;
+	padding: 10px 20px;
+	border-radius: 20px;
+	background-color: #302d34;
+	color: white;
+}
+
+/* CSS MEDIA QUERIES */
+
+/* Mobile viewport */
+@media (max-width: 600px) {
+	/* Adjust styles for smaller screens */
+  body {
+
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 16px;;
+  }
+}
+
+/* Tablet viewport */
+@media (min-width: 601px) and (max-width: 1024px) {
+	/* Adjust styles for tablet screens */
+  body {
+
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 18px;;
+  }
+}
+
+a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #525960; /* Button background color */
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px; /* Rounded corners */
+	transition: background-color 0.3s ease; /* Smooth transition on background color change */
+}
+
+/* Change the link color on hover */
+a:hover {
+	color: #838586; /* Darker shade of blue on hover */
+}
